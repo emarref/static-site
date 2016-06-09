@@ -1,12 +1,8 @@
 import jade from 'gulp-jade';
 import gutil from 'gulp-util';
+import { handle } from './utilities';
 
 export default (gulp, connect, production) => {
-    const handle = stream => err => {
-        gutil.log(err);
-        stream.end();
-    }
-
     return {
         build: (src, dest, locals = {}) => {
             return () => {
