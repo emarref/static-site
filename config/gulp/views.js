@@ -1,13 +1,21 @@
 import jade from 'gulp-jade';
+import gutil from 'gulp-util';
 
 export default (gulp, connect, production) => {
+    const handle = stream => err => {
+        gutil.log(err);
+        stream.end();
+    }
+
     return {
         build: (src, dest, locals = {}) => {
-            locals = Object.assign({}, {IS_PRODUCTION: production}, locals);
-            return () => gulp.src(src)
-                .pipe(jade({locals: locals}))
-                .pipe(gulp.dest(dest))
-                .pipe(connect.reload());
+            return () => {
+                const j = jade({locals: locals});
+                return gulp.src(src)
+                    .pipe(j.on('error', handle(j)))
+                    .pipe(gulp.dest(dest))
+                    .pipe(connect.reload());
+            }
         }
     };
 };

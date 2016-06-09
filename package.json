@@ -4,7 +4,17 @@
   "description": "A bootstrap for building static sites hosted in GitHub Pages.",
   "author": "Malcolm Fell <emarref@gmail.com>",
   "license": "MIT",
-  "keywords": ["livereload", "connect", "sass", "scss", "es6", "es-2015", "jade", "bootstrap", "gulp"],
+  "keywords": [
+    "livereload",
+    "connect",
+    "sass",
+    "scss",
+    "es6",
+    "es-2015",
+    "jade",
+    "bootstrap",
+    "gulp"
+  ],
   "scripts": {
     "build": "gulp build",
     "watch": "gulp watch"
