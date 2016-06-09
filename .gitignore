@@ -1,5 +1,0 @@
-/dist/*
-!/dist/.gitkeep
-/node_modules
-/.publish
-/npm-debug.log
