@@ -17,7 +17,8 @@
   ],
   "scripts": {
     "build": "gulp build",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "deploy": "gulp deploy"
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",

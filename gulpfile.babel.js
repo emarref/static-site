@@ -42,6 +42,6 @@ gulp.task('views:watch', ['serve'], () => {
 });
 
 gulp.task('serve', () => connect.server(connectOptions));
-gulp.task('deploy', ['build'], () => gulp.src('dest/**.*').pipe(deploy()));
+gulp.task('deploy', ['build'], () => gulp.src('dist/**.*').pipe(deploy()));
 gulp.task('build', ['clean', 'assets:build', 'scripts:build', 'styles:build', 'views:build']);
 gulp.task('watch', ['assets:watch', 'scripts:watch', 'styles:watch', 'views:watch']);
