@@ -36,7 +36,7 @@ gulp.task('styles:watch', ['serve'], () => {
     gulp.watch('src/styles/**.*', ['styles:build']);
 });
 
-gulp.task('views:build', views(gulp, connect, IS_PRODUCTION).build('src/views/**/[^_]*.jade', 'dist/'));
+gulp.task('views:build', views(gulp, connect, IS_PRODUCTION).build('src/views/**/[^_]*.pug', 'dist/'));
 gulp.task('views:watch', ['serve'], () => {
     gulp.watch('src/views/**.*', ['views:build']);
 });

@@ -1,4 +1,4 @@
-import jade from 'gulp-jade';
+import pug from 'gulp-pug';
 import gutil from 'gulp-util';
 import { handle } from './utilities';
 
@@ -11,9 +11,9 @@ export default (gulp, connect, production) => {
             };
 
             return () => {
-                const j = jade(options);
+                const stream = pug(options);
                 return gulp.src(src)
-                    .pipe(j.on('error', handle(j)))
+                    .pipe(stream.on('error', handle(stream)))
                     .pipe(gulp.dest(dest))
                     .pipe(connect.reload());
             }
