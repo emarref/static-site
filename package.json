@@ -1,0 +1,34 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "A bootstrap for building static sites hosted in GitHub Pages.",
+  "author": "Malcolm Fell <emarref@gmail.com>",
+  "license": "MIT",
+  "keywords": ["livereload", "connect", "sass", "scss", "es6", "es-2015", "jade", "bootstrap", "gulp"],
+  "scripts": {
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babelify": "^7.3.0",
+    "bootstrap-sass": "^3.3.6",
+    "browserify": "^13.0.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-if": "^2.0.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-util": "^3.0.7",
+    "uglifyify": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
