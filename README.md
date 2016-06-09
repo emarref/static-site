@@ -12,6 +12,9 @@ Builds and compiles then serves the following:
 
 Deploy to github pages with `npm run-script deploy`.
 
+See [emarref.github.io/static-site](https://emarref.github.io/static-site/) for
+the result of deploying this repository.
+
 ## Development
 
 Clone this repository then delete the .git dir. Run `npm run-script watch` to
