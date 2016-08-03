@@ -20,9 +20,9 @@ const connectOptions = {
 
 gulp.task('clean', () => del(['dist/**/*']));
 
-gulp.task('assets:build', assets(gulp, connect, IS_PRODUCTION).build('assets/**.*', 'dist/'));
+gulp.task('assets:build', assets(gulp, connect, IS_PRODUCTION).build('assets/**/*', 'dist/'));
 gulp.task('assets:watch', ['serve'], () => {
-    gulp.watch('assets/**.*', ['assets:build']);
+    gulp.watch('assets/**/*', ['assets:build']);
 });
 
 gulp.task('script:main:build', script(gulp, connect, IS_PRODUCTION).build('src/scripts/main.js', 'dist/js'));

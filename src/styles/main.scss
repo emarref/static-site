@@ -1,4 +1,29 @@
-// Customise boostrap before you import it
-$body-bg: #eee;
-
+@import 'variables';
 @import 'bootstrap';
+
+body {
+    // padding-top: $navbar-height;
+}
+
+.jumbotron {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ), url(/images/5789623_orig.jpg) center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: $navbar-height * 4;
+    padding-bottom: $navbar-height * 3;
+}
+
+.content {
+    padding-top: $navbar-height;
+    padding-bottom: $navbar-height;
+}
+
+footer {
+    border-top: solid #eee 1px;
+    padding: 2em 0;
+    color: #ccc;
+}

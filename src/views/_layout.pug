@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        block title
+            title Linda Fell - Celebrant
+        link(href="https://fonts.googleapis.com/css?family=Dancing+Script", rel="stylesheet", type="text/css")
+        link(rel="stylesheet", type="text/css", href="css/main.css")
+        meta(name="keywords", content="Linda Fell, celebrant, weddings, funerals, memorials")
+    body
+        include _navigation
+        block banner
+        .container
+            .content
+                block content
+        footer
+            .container
+                include _footer
+        script(type='text/javascript', src='js/main.js')
